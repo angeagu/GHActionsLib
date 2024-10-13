@@ -1,4 +1,4 @@
-name: "Simple Action from GHActionsLib"
+name: "simple_echo_action"
 description: "This action prints a message and sets an output."
 author: "Your Name"
 
