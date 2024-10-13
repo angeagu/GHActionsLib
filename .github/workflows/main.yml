@@ -1,0 +1,20 @@
+name: "Simple Action from GHActionsLib"
+description: "This action prints a message and sets an output."
+author: "Your Name"
+
+inputs:
+  message:
+    description: "The message to print"
+    required: true
+    default: "Hello from GHActionsLib!"
+
+outputs:
+  message_output:
+    description: "The message passed as output"
+
+runs:
+  using: "composite"
+  steps:
+    - name: "Set output"
+      run: echo "::set-output name=message_output::${{ inputs.message }}"
+
