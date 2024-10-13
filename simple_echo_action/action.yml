@@ -17,4 +17,5 @@ runs:
   steps:
     - name: "Set output"
       run: echo "::set-output name=message_output::${{ inputs.message }}"
+      shell: bash  # Specify the shell, e.g., bash
 
